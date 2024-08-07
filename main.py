@@ -18,10 +18,10 @@ Teste de AUTOMAÇÃO
 WhatsApp Web
 '''
 
-lista_contatos = ["jonas", "jotape", "kiko", "teste", "eu mais", "mais um eu"]
+lista_contatos = ["jonas", "jotape", "kiko", "teste", "eu mais", "mais um eu"] #Lista com nomes ficticios 
 
 nav.find_element('xpath', '//*[@id="side"]/div[1]/div/div[2]/button/div[2]/span').click()
-nav.find_element('xpath', '//*[@id="side"]/div[1]/div/div[2]/div[2]/div/div[1]/p').send_keys("aluguel atrasado")
+nav.find_element('xpath', '//*[@id="side"]/div[1]/div/div[2]/div[2]/div/div[1]/p').send_keys("Diego") #Primeiro a enviar mensagem
 nav.find_element('xpath', '//*[@id="side"]/div[1]/div/div[2]/div[2]/div/div[1]/p').send_keys(Keys.ENTER)
 time.sleep(2)
 # Enviar a msg. Caso tenha emoji, é necessário usar o PyperClip. Em mensagens simples, não há necessidade
